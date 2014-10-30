@@ -7,7 +7,7 @@
 
   client = require("cheerio-httpcli");
 
-  app.set("port", 5050.);
+  app.set('port', process.env.PORT || 5050);
 
   obj = new Object();
 

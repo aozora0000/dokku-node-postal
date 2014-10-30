@@ -16,7 +16,7 @@
   });
 
   app.get("/:zip", function(req, response) {
-    client.fetch("http://www.post.japanpost.jp/cgi-zip/zipcode.php", {
+    return client.fetch("http://www.post.japanpost.jp/cgi-zip/zipcode.php", {
       zip: req.params.zip
     }, function(err, $, res) {
       if ($(".sp-b10 > tbody:nth-child(2) > tr:nth-child(2) > td:nth-child(1)").text() === "") {
@@ -33,7 +33,7 @@
   });
 
   app.listen(app.get("port"), function() {
-    console.log("Node app is running at localhost:" + app.get("port"));
+    return console.log("Node app is running at localhost:" + app.get("port"));
   });
 
 }).call(this);

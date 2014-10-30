@@ -20,8 +20,6 @@ app.get "/:zip", (req, response) ->
             obj.city = $(".sp-b10 > tbody:nth-child(2) > tr:nth-child(2) > td:nth-child(3)").text()
             obj.town = $(".sp-b10 > tbody:nth-child(2) > tr:nth-child(2) > td:nth-child(4)").text().trim().split("\r\n\t\t\t\t\t\t\t\t")
         response.send JSON.stringify(obj)
-    return
 
 app.listen app.get("port"), ->
     console.log "Node app is running at localhost:" + app.get("port")
-    return

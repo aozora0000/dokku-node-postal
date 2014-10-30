@@ -1,7 +1,4 @@
 {
-  "name": "node-postal",
-  "version": "0.1.0",
-  "description": "Japanise ZipCode Scraping API",
   "main": "index.js",
   "scripts": {
     "start": "node -c coffee index.js"

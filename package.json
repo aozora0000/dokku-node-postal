@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
-    "start": "node -c coffee index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.0.0",

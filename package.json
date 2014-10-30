@@ -1,8 +1,13 @@
 {
+  "name": "dokku-node-postal",
+  "version": "0.0.1",
+  "description": "dokku用郵便番号変換くん",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/aozora0000/dokku-node-postal",
   "dependencies": {
     "express": "^4.0.0",
     "cheerio-httpcli": "*"

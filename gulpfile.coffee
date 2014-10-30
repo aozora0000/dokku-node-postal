@@ -4,7 +4,7 @@ nodemon = require 'gulp-nodemon'
 
 gulp.task 'compile', () ->
     gulp.src 'index.coffee'
-        .pipe coffee()
+        .pipe coffee(coffee({bare:true}))
         .pipe gulp.dest('./')
     return
 

@@ -22,4 +22,4 @@ app.get "/:zip", (req, response) ->
         response.send JSON.stringify(obj)
 
 app.listen app.get("port"), ->
-    console.log "Node app is running at localhost:" + app.get("port")
+    console.log "Node app is running at http://localhost:" + app.get("port")

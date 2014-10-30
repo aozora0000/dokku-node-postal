@@ -33,7 +33,7 @@
   });
 
   app.listen(app.get("port"), function() {
-    return console.log("Node app is running at localhost:" + app.get("port"));
+    return console.log("Node app is running at http://localhost:" + app.get("port"));
   });
 
 }).call(this);

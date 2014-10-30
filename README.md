@@ -20,6 +20,7 @@ dockerで動作するので、気軽にデプロイ出来ます。
 $ git clone https://github.com/aozora0000/dokku-node-postal
 $ cd dokku-node-postal
 $ git remote add dokku dokku@[DOKKU_HOST]:dokku-node-postal
+$ git push dokku master
 ```
 
 ### ローカル(node.js導入前提)
